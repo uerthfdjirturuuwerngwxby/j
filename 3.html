@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Feedback Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid black;
+    }
+
+    input[type=radio] {
+      margin-right: 4px;
+    }
+
+    input[type=submit] {
+      background-color: #008000;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>XYZ Diagnostic Centre</h1>
+  <h2>Customer Feedback Form</h2>
+
+  <form action="/feedback" method="post">
+
+    <table>
+      <tr>
+        <th>Form No</th>
+        <td><input type="text" name="form_no"></td>
+      </tr>
+      <tr>
+        <th>Date</th>
+        <td><input type="date" name="date"></td>
+      </tr>
+      <tr>
+        <th>Branch</th>
+        <td>
+          <select name="branch">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h3>Font Office Reception</h3>
+
+    <table style="border: 0">
+      <tr>
+        <td>Receptionist attended to you promptly and provided right information</td>
+        <td>
+          <input type="radio" name="receptionist_attended_promptly" value="Excellent"> Excellent
+          <input type="radio" name="receptionist_attended_promptly" value="Good"> Good
+          <input type="radio" name="receptionist_attended_promptly" value="Average"> Average
+          <input type="radio" name="receptionist_attended_promptly" value="Poor"> Poor
+        </td>
+      </tr>
+      <tr>
+        <td>Waiting time at the desk for registration</td>
+        <td>
+          <input type="radio" name="waiting_time_at_desk" value="Excellent"> Excellent
+          <input type="radio" name="waiting_time_at_desk" value="Good"> Good
+          <input type="radio" name="waiting_time_at_desk" value="Average"> Average
+          <input type="radio" name="waiting_time_at_desk" value="Poor"> Poor
+        </td>
+      </tr>
+      <tr>
+        <td>Counselling provided for pre-invesigation preparation if required</td>
+        <td>
+          <input type="radio" name="pre_investigation_counselling" value="Excellent"> Excellent
+          <input type="radio" name="pre_investigation_counselling" value="Good"> Good
+          <input type="radio" name="pre_investigation_counselling" value="Average"> Average
+          <input type="radio" name="pre_investigation_counselling" value="Poor"> Poor
+        </td>
+      </tr>
+      <tr>
+        <td>Queries on credit payment, reimbursements/claims were answered satisfactorily</td>
+        <td>
+          <input type="radio" name="credit_payment_reimbursement_queries_answered_satisfactorily" value="Excellent"> Excellent
+          <input type="radio" name="credit_payment_reimbursement_queries_answered_satisfactorily" value="Good"> Good
+          <input type="radio" name="credit_payment_reimbursement_queries_answered_satisfactorily" value="Average"> Average
+          <input type="radio" name="credit_payment_reimbursement_queries_answered_satisfactorily" value="Poor"> Poor
+        </td>
+      </tr>
+      <tr>
+        <td>You were directed to various department correctly</td>
+        <td>
+          <input type="radio" name="directed_to_departments_correctly" value="Excellent"> Excellent
+          <input type="radio" name="directed_to_departments_correctly"
